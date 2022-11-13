@@ -29,6 +29,6 @@ CREATE TABLE blood_pressure (
 );
 
 INSERT INTO users (Username,Email,Password,Active) VALUES ("Dummy", "Dummy+Dummy@dummy.com", "HelloWorld!", 1);
-INSERT INTO roles (RoleName) VALUES ("Creator"),("Administrator");
+INSERT INTO roles (RoleName) VALUES ("Creator"), ("Administrator");
 INSERT INTO user_roles (UserID, RoleID) VALUES (1,1), (1,2);
 INSERT INTO blood_pressure (UserID, Systolic, Diastolic, Date) VALUES (1,120,90,NOW()), (1,140,99, NOW());
